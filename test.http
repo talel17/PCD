@@ -1,0 +1,80 @@
+
+
+###
+
+### Connexion
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "talel@gmail.com",
+  "password": "azerty1234"
+}
+
+### Créer une session
+POST http://localhost:8080/api/sessions/configure
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkxOTYyNCwiZXhwIjoxNzc3MDA2MDI0fQ.pElooRB70PMm-9Pjmv3nzOW6nLQNGeonr8ZJi0zKhk0QJmI_lOUDLn74Vv2Kp_dk
+Content-Type: application/json
+
+{
+  "poste": "Développeur Java",
+  "type": "TECHNIQUE",
+  "difficulte": "JUNIOR",
+  "langue": "FR",
+  "nbQuestions": 5,
+  "cvId": 6
+}
+
+###
+
+### Mes sessions
+GET http://localhost:8080/api/sessions
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkxOTYyNCwiZXhwIjoxNzc3MDA2MDI0fQ.pElooRB70PMm-9Pjmv3nzOW6nLQNGeonr8ZJi0zKhk0QJmI_lOUDLn74Vv2Kp_dk
+
+###
+
+### Détail session
+GET http://localhost:8080/api/sessions/2
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkxOTYyNCwiZXhwIjoxNzc3MDA2MDI0fQ.pElooRB70PMm-9Pjmv3nzOW6nLQNGeonr8ZJi0zKhk0QJmI_lOUDLn74Vv2Kp_dk
+
+### Générer + télécharger rapport
+GET http://localhost:8080/api/report/session/2/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+
+###
+
+### Mes rapports
+GET http://localhost:8080/api/report/mine
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+
+###
+
+### Télécharger rapport depuis historique
+GET http://localhost:8080/api/report/2/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+
+###
+
+### Télécharger mon CV
+GET http://localhost:8080/api/report/cv/1/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+
+### Télécharger CV
+GET http://localhost:8080/api/cv/1/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+
+### Liste des candidats
+GET http://localhost:8080/api/admin/users
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzQxOTAsImV4cCI6MTc3NzAyMDU5MH0.goJgTW2I46T62JsUhgxlDus1I4MF2N8h3YU0NyzlMabvn9CK9hgi0SDiVWHIx8OU
+
+###
+
+### Activer / désactiver un compte
+PUT http://localhost:8080/api/admin/users/1/toggle
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzQxOTAsImV4cCI6MTc3NzAyMDU5MH0.goJgTW2I46T62JsUhgxlDus1I4MF2N8h3YU0NyzlMabvn9CK9hgi0SDiVWHIx8OU
+
+###
+
+### Statistiques
+GET http://localhost:8080/api/admin/stats
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzQxOTAsImV4cCI6MTc3NzAyMDU5MH0.goJgTW2I46T62JsUhgxlDus1I4MF2N8h3YU0NyzlMabvn9CK9hgi0SDiVWHIx8OU
