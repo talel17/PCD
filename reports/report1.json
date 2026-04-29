@@ -1,0 +1,33 @@
+{
+  "candidate_name": "Alex Morgan",
+  "interview_date": "2026-04-24",
+  "room_name": "my-room",
+  "overall_score": 5.0,
+  "score_justification": "Le candidat possède une bonne expérience technique, mais il n'a pas pu fournir de réponses détaillées aux questions sur ses projets. Cette absence de précisions a limité l'évaluation de ses compétences réelles.",
+  "strengths": [
+    {
+      "title": "Expérience backend solide",
+      "description": "Le candidat possède une solide expérience en développement backend et en microservices, comme indiqué dans son CV."
+    },
+    {
+      "title": "Compétences techniques variées",
+      "description": "Il maîtrise plusieurs technologies, notamment Go et Apache Kafka."
+    }
+  ],
+  "weaknesses": [
+    {
+      "title": "Manque de réponses détaillées",
+      "description": "Le candidat n’a pas pu fournir d’exemples concrets sur ses réalisations chez Stripe ou Airbnb."
+    },
+    {
+      "title": "Difficulté à articuler les projets",
+      "description": "Il a eu du mal à expliquer les étapes clés et les défis techniques des projets mentionnés."
+    }
+  ],
+  "tips_for_future_interviews": [
+    "Préparez des exemples précis de vos réalisations en utilisant la méthode STAR (Situation, Task, Action, Result).",
+    "Révisez les détails de votre parcours professionnel avant l'entretien.",
+    "Soyez prêt à expliquer clairement les choix techniques que vous avez faits."
+  ],
+  "summary": "Alex Morgan montre une solide base technique en backend et microservices, avec des compétences en Go et Kafka. Cependant, il a eu du mal à détailler ses expériences passées, notamment chez Stripe et Airbnb, ce qui a limité l’évaluation de ses capacités d’architecture. Pour progresser, il devra préparer des récits structurés de ses projets et réviser les aspects techniques qu’il a mis en œuvre. Avec une meilleure préparation, son potentiel pourrait être pleinement démontré."
+}

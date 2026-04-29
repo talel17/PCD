@@ -1,0 +1,37 @@
+{
+  "candidate_name": "Mohamed",
+  "interview_date": "2026-04-23",
+  "room_name": "console",
+  "overall_score": 6.0,
+  "score_justification": "Le candidat possède une expérience concrète en management et des compétences techniques reconnues, ce qui justifie un score moyen. Cependant, ses réponses manquent de détail et de structure, ce qui empêche d’atteindre un score plus élevé.",
+  "strengths": [
+    {
+      "title": "Expérience managériale",
+      "description": "Il a encadré une équipe de 5 ingénieurs débutants chez Stripe, démontrant une responsabilité en management."
+    },
+    {
+      "title": "Compétences techniques",
+      "description": "Il mentionne des contributions à des projets open source comme goqueue, attestant de ses compétences techniques."
+    },
+    {
+      "title": "Motivation au partage",
+      "description": "Il souligne l’importance du partage et de l’entraide, montrant une motivation pour la transmission de connaissances."
+    }
+  ],
+  "weaknesses": [
+    {
+      "title": "Manque de détails",
+      "description": "Ses réponses sont souvent brèves et peu structurées, ne permettant pas de bien illustrer ses expériences."
+    },
+    {
+      "title": "Clarté des motivations",
+      "description": "Il ne développe pas suffisamment ses objectifs professionnels ni les raisons qui le motivent."
+    }
+  ],
+  "tips_for_future_interviews": [
+    "Utiliser la méthode STAR pour structurer les réponses comportementales.",
+    "Préparer des réponses plus élaborées avec des exemples concrets.",
+    "Exposer clairement ses aspirations et motivations professionnelles."
+  ],
+  "summary": "Le candidat montre une base solide grâce à son expérience en gestion d'équipe et à ses contributions techniques. Malgré cela, il doit améliorer la profondeur et la clarté de ses réponses pour mieux mettre en valeur ses compétences. En adoptant une approche plus structurée et en explicitant ses motivations, il pourra renforcer son impact lors des prochains entretiens."
+}

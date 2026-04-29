@@ -2,6 +2,7 @@ package com.smartinterview.backend.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -32,4 +33,31 @@ public class Report {
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
+
+    @Column(name = "candidate_name", length = 200)
+    private String candidateName;
+
+    @Column(name = "overall_score", precision = 4, scale = 2)
+    private BigDecimal overallScore;
+
+    @Column(name = "score_justification", columnDefinition = "TEXT")
+    private String scoreJustification;
+
+    @Column(name = "strengths", columnDefinition = "TEXT")
+    private String strengths;
+
+    @Column(name = "weaknesses", columnDefinition = "TEXT")
+    private String weaknesses;
+
+    @Column(name = "tips", columnDefinition = "TEXT")
+    private String tips;
+
+    @Column(name = "summary", columnDefinition = "TEXT")
+    private String summary;
+
+    @Column(name = "room_name", length = 200)
+    private String roomName;
+
+    @Column(name = "interview_date", length = 50)
+    private String interviewDate;
 }

@@ -8,7 +8,7 @@ Content-Type: application/json
 
 {
   "email": "talel@gmail.com",
-  "password": "azerty1234"
+  "password": "azerty123"
 }
 
 ### Créer une session
@@ -39,25 +39,25 @@ Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwic
 
 ### Générer + télécharger rapport
 GET http://localhost:8080/api/report/session/2/download
-Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzczMTAsImV4cCI6MTc3NzAyMzcxMH0.ouc322vVavTlZC7GE9TqyvqK5INpPCUuvoq24_b93FX4lnmcR1axlO5MFur4ZPmV
 
 ###
 
 ### Mes rapports
 GET http://localhost:8080/api/report/mine
-Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzczMTAsImV4cCI6MTc3NzAyMzcxMH0.ouc322vVavTlZC7GE9TqyvqK5INpPCUuvoq24_b93FX4lnmcR1axlO5MFur4ZPmV
 
 ###
 
 ### Télécharger rapport depuis historique
-GET http://localhost:8080/api/report/2/download
-Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+GET http://localhost:8080/api/report/1/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzczMTAsImV4cCI6MTc3NzAyMzcxMH0.ouc322vVavTlZC7GE9TqyvqK5INpPCUuvoq24_b93FX4lnmcR1axlO5MFur4ZPmV
 
 ###
 
 ### Télécharger mon CV
-GET http://localhost:8080/api/report/cv/1/download
-Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbG9AZ21haWwuY29tIiwicm9sZSI6IkNBTkRJREFURSIsImlhdCI6MTc3NjkzMzUzNiwiZXhwIjoxNzc3MDE5OTM2fQ.Wvg-x9_nmO2jrhAPEZOxJ_x2adk2TLmi62MOYl25RzXd53f6biluRG5X-H1hI-sY
+GET http://localhost:8080/api/report/cv/3/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzczMTAsImV4cCI6MTc3NzAyMzcxMH0.ouc322vVavTlZC7GE9TqyvqK5INpPCUuvoq24_b93FX4lnmcR1axlO5MFur4ZPmV
 
 ### Télécharger CV
 GET http://localhost:8080/api/cv/1/download
@@ -78,3 +78,40 @@ Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb
 ### Statistiques
 GET http://localhost:8080/api/admin/stats
 Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5MzQxOTAsImV4cCI6MTc3NzAyMDU5MH0.goJgTW2I46T62JsUhgxlDus1I4MF2N8h3YU0NyzlMabvn9CK9hgi0SDiVWHIx8OU
+
+### Générer + télécharger le rapport de la session 1
+GET http://localhost:8080/api/report/session/1/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5Mzc3ODYsImV4cCI6MTc3NzAyNDE4Nn0.aYIjz63cewf_xwBMYQhWIrxfJYsRfyw6wWaXwlsiDpK3UVVzRMgf64Sr_N_jdfNY
+
+### Envoyer le rapport par email
+POST http://localhost:8080/api/report/session/1/send-email
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5Mzc3ODYsImV4cCI6MTc3NzAyNDE4Nn0.aYIjz63cewf_xwBMYQhWIrxfJYsRfyw6wWaXwlsiDpK3UVVzRMgf64Sr_N_jdfNY
+###
+
+GET http://localhost:8080/api/report/1/download
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5Mzc3ODYsImV4cCI6MTc3NzAyNDE4Nn0.aYIjz63cewf_xwBMYQhWIrxfJYsRfyw6wWaXwlsiDpK3UVVzRMgf64Sr_N_jdfNY
+
+###
+GET http://localhost:8080/api/admin/users
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5Mzc3ODYsImV4cCI6MTc3NzAyNDE4Nn0.aYIjz63cewf_xwBMYQhWIrxfJYsRfyw6wWaXwlsiDpK3UVVzRMgf64Sr_N_jdfNY
+
+###
+PUT http://localhost:8080/api/admin/users/1/toggle
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzY5Mzc3ODYsImV4cCI6MTc3NzAyNDE4Nn0.aYIjz63cewf_xwBMYQhWIrxfJYsRfyw6wWaXwlsiDpK3UVVzRMgf64Sr_N_jdfNY
+
+
+### Upload CV (remplace TON_TOKEN et le chemin du PDF)
+POST http://localhost:8080/api/cv/upload
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzcyNTQ3NzAsImV4cCI6MTc3NzM0MTE3MH0.n6FWCtjRXpoKTsQOGmLTZ8Ktzh7Q_gF4YY3RCs6pGaXpixqIV9gCH6G8zLCOh4Jg
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="mon_cv.pdf"
+Content-Type: application/pdf
+
+< C:\Users\PC\Desktop\ENSI\II2
+--boundary--
+
+### Mes CVs
+GET http://localhost:8080/api/cv/mine
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0YWxlbEBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NzcyNTQ3NzAsImV4cCI6MTc3NzM0MTE3MH0.n6FWCtjRXpoKTsQOGmLTZ8Ktzh7Q_gF4YY3RCs6pGaXpixqIV9gCH6G8zLCOh4Jg
