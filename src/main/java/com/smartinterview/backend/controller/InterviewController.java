@@ -46,4 +46,14 @@ public class InterviewController {
             interviewService.getSessionById(id, principal.getName())
         );
     }
+
+
+    // Endpoint public pour l'agent Python
+    @GetMapping("/{id}/public")
+    public ResponseEntity<SessionResponse> getSessionPublic(@PathVariable Long id) {
+        return ResponseEntity.ok(
+                interviewService.getSessionPublic(id)
+            );
+    }
+
 }

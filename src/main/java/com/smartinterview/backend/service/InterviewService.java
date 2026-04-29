@@ -7,7 +7,10 @@ import com.smartinterview.backend.entity.User;
 import com.smartinterview.backend.repository.InterviewSessionRepository;
 import com.smartinterview.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -58,6 +61,13 @@ public class InterviewService {
         }
 
         return toResponse(session);
+    }
+
+    public SessionResponse getSessionPublic(@PathVariable Long id) {
+    // pas de Principal ici — accessible sans token
+    InterviewSession session = sessionRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Session introuvable"));
+    return toResponse(session);
     }
 
     private SessionResponse toResponse(InterviewSession session) {
