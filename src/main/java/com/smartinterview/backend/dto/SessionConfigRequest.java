@@ -20,7 +20,7 @@ public class SessionConfigRequest {
     @NotBlank(message = "La langue est obligatoire")
     private String langue; // FR | EN
 
-    @Min(value = 5, message = "Minimum 5 questions")
+    @Min(value = 1, message = "Minimum 1 questions")
     @Max(value = 20, message = "Maximum 20 questions")
     private Integer nbQuestions;
 
